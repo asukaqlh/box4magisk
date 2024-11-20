@@ -29,7 +29,7 @@ log() {
   esac
 }
 
-uid_list=()
+uid_list=("1000" "1001" "10053" "10144")
 find_packages_uid() {
   for user_package in ${user_packages_list[@]} ; do
     user=$(echo ${user_package} | awk -F ':' '{print $1}')
